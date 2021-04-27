@@ -68,7 +68,7 @@ export class Home extends Component {
                         <FrontItems>
                           <FrontH1>Greatest Food Ever</FrontH1>
                           <FrontP>Ready in 60 seconds</FrontP>
-                          <FrontBtn><Link class="text-white" exact to="/menu">Let me see the menu</Link></FrontBtn>
+                          <Link exact to="/menu"><FrontBtn>Let me see the menu</FrontBtn></Link>
                         </FrontItems>
                     </FrontContent>
                 </FrontContainer>
