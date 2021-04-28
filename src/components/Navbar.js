@@ -11,10 +11,7 @@ export class Navbar extends Component {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className=" navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav mr-lg-2">
-                            <li className="nav-item pl-4">
-                                <NavLink className="nav-link" exact to="/">Home</NavLink>
-                            </li>
+                        <ul className="navbar-nav mr-lg-2">                           
                             <li className="nav-item pl-4">
                                 <NavLink className="nav-link" exact to="/menu">Menu</NavLink>
                             </li>
