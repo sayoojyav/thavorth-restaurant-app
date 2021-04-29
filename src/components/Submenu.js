@@ -1,7 +1,9 @@
-import React,{useEffect} from 'react'
+import React,{useEffect} from 'react';
+import { useParams } from "react-router-dom";
 import styled from 'styled-components';
-import {useDispatch,useSelector} from 'react-redux';
+import {connect, useDispatch,useSelector} from 'react-redux';
 import { viewMenulist } from './../store/Actions/menuAction';
+import { addcart } from './../store/Actions/orderAction';
 
 export const MenuContainer = styled.div`
   /* width: 100vw; */
@@ -71,10 +73,9 @@ export const MenusButton = styled.button`
     opacity: 0.7;
   }
 `;
-const Submenu = ({match}) =>  {
-
-      const {id} =match.params;
-      const {category_name} = match.params;      
+const Submenu = (props) =>  {
+      // const {id} =useParams();
+      const {category_name} =useParams();      
       const dispatch = useDispatch()
       const menus = useSelector((state) =>state.menus)
       // console.log(menus)      
@@ -91,7 +92,7 @@ const Submenu = ({match}) =>  {
           <MenuContainer>
             <MenusHeading>~{category_name}~</MenusHeading>
             <MenusWrapper>
-              {menu && menu.filter((m)=>{return m.category_id ===1}).map((filteredmenu,index) => (
+              {menu && menu.filter((m)=>{return m.category_id === 1}).map((filteredmenu,index) => (
                       <MenusCard key={filteredmenu.id}>
                 <MenusImg src={filteredmenu.photo} alt="foodpic"></MenusImg>
                 <MenusInfo>
@@ -99,7 +100,7 @@ const Submenu = ({match}) =>  {
                 <MenusDesc>{filteredmenu.description}</MenusDesc>
                 <MenusPrice>${filteredmenu.price}</MenusPrice>                    
                 </MenusInfo>
-                <Menufooter><MenusButton>Add to Cart</MenusButton></Menufooter>
+                <Menufooter><MenusButton onClick={()=>props.addcart(filteredmenu)}>Add to Cart</MenusButton></Menufooter>
                 
               </MenusCard>
                      ))}
@@ -113,4 +114,4 @@ const Submenu = ({match}) =>  {
     
 }
 
-export default Submenu
+export default connect(null,{addcart})(Submenu);

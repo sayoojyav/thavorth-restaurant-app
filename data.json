@@ -48,7 +48,9 @@
       "description":"Omelette is a dish made from beaten eggs,fried with butter or oil",
       "price":30,
       "category_id":1,
-      "photo":"https://www.whiskaffair.com/wp-content/uploads/2019/03/Indian-Omelette-2-1-1200x1800.jpg"
+      "photo":"https://www.whiskaffair.com/wp-content/uploads/2019/03/Indian-Omelette-2-1-1200x1800.jpg",
+      "numbers":0,
+      "inCart":"false"
     },
     {
       "id":2,
@@ -56,7 +58,9 @@
       "description":"Toast is bread that has been browned by exposure to radiant heat",
       "price":50,
       "category_id":1,
-      "photo":"https://i.ytimg.com/vi/QzuXzLtYUpE/maxresdefault.jpg"
+      "photo":"https://i.ytimg.com/vi/QzuXzLtYUpE/maxresdefault.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -65,7 +69,9 @@
       "description":"Sometimes we just need to start the day with something decadent and indulgent, like this Nutella",
       "price":100,
       "category_id":1,
-      "photo":"https://www.oliviascuisine.com/wp-content/uploads/2019/01/nutella-french-toast-IG-735x735.jpg"
+      "photo":"https://www.oliviascuisine.com/wp-content/uploads/2019/01/nutella-french-toast-IG-735x735.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -74,7 +80,9 @@
       "description":"French toast is a dish made of sliced bread soaked in beaten eggs and typically milk, then pan fried.",
       "price":70,
       "category_id":1,
-      "photo":"https://www.momables.com/wp-content/uploads/2013/12/Egg-free-french-toast_post.jpg"
+      "photo":"https://www.momables.com/wp-content/uploads/2013/12/Egg-free-french-toast_post.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -83,7 +91,9 @@
       "description":"A simple yet wholesome Vegetable Rava Upma Recipe also known as the sooji upma. Since it is loaded with vegetables, it makes a great start to your mornings, loaded with fiber and nutrients.",
       "price":50,
       "category_id":1,
-      "photo":"https://www.funfoodfrolic.com/wp-content/uploads/2019/06/Rava-Upma-3.jpg"
+      "photo":"https://www.funfoodfrolic.com/wp-content/uploads/2019/06/Rava-Upma-3.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -92,7 +102,9 @@
       "description":"Wheat Uttapam is simillar as dosa prepared using wheat flour and topped with veggies like tomato and onion.",
       "price":70,
       "category_id":1,
-      "photo":"https://www.carveyourcraving.com/wp-content/uploads/2020/04/Vegetable-uttapam-recipe.jpg"
+      "photo":"https://www.carveyourcraving.com/wp-content/uploads/2020/04/Vegetable-uttapam-recipe.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -101,7 +113,9 @@
       "description":"The basmati rice soaks up all the creamy buttery sauce from the butter chicken and the quick garlic stove-top naan is a great addition. You can skip the naan if you’re feeling super lazy and just go with the basmati rice and butter chicken.",
       "price":200,
       "category_id":2,
-      "photo":"https://s3.amazonaws.com/video-api-prod/assets/6e6a56c27c68410991ce7d4e4acc7dee/BFV8692_Easy_Butter_Chicken_Thumb.jpg"
+      "photo":"https://s3.amazonaws.com/video-api-prod/assets/6e6a56c27c68410991ce7d4e4acc7dee/BFV8692_Easy_Butter_Chicken_Thumb.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -110,7 +124,10 @@
       "description":"Chicken Biryani – a highly aromatic and well-seasoned one-pot dish originally from India that has a perfect balance of chicken meat, rice and veggies that’s going to excite and linger on your taste buds. ",
       "price":150,
       "category_id":2,
-      "photo":"https://res.cloudinary.com/mealthy1/image/upload/ar_16:11,c_fill,f_auto,h_760,q_auto:best,w_1140/v1550057717/cms_recipe_featured_image/fuxft0x5soph3ovsumvn.jpg"
+      "photo":"https://res.cloudinary.com/mealthy1/image/upload/ar_16:11,c_fill,f_auto,h_760,q_auto:best,w_1140/v1550057717/cms_recipe_featured_image/fuxft0x5soph3ovsumvn.jpg",
+      "numbers":0,
+      "inCart":"false"
+      
 
     },
     {
@@ -119,8 +136,9 @@
       "description":"It is served over rice or noodles in soup. The best parts are the connective tissue and the tendons that get broken down and become soft and chewy.",
       "price":250,
       "category_id":2,
-      "photo":"https://i.pinimg.com/originals/0f/d1/c2/0fd1c2bfe9be2a3b724893c2a078d90d.jpg"
-
+      "photo":"https://i.pinimg.com/originals/0f/d1/c2/0fd1c2bfe9be2a3b724893c2a078d90d.jpg",
+      "numbers":0,
+      "inCart":"false"
     },
     {
       "id":10,
@@ -128,8 +146,9 @@
       "description":"It is a delicious medley of rice, vegetables and a variety of spices.Compared to the other varieties of rice dishes like Pulao, Biryani has a stronger taste of curried rice due to a higher amount of spices.",
       "price":100,
       "category_id":2,
-      "photo":"https://veenaazmanov.com/wp-content/uploads/2018/06/One-Pot-Vegetable-Rice-2.jpg"
-
+      "photo":"https://veenaazmanov.com/wp-content/uploads/2018/06/One-Pot-Vegetable-Rice-2.jpg",
+      "numbers":0,
+      "inCart":"false"
     },
     {
       "id":11,
@@ -137,7 +156,9 @@
       "description":"This dish is like mother of maximum “Main Course” dish. Relish your side dish with the aroma & test of Basmati!",
       "price":80,
       "category_id":2,
-      "photo":"https://5.imimg.com/data5/AQ/SL/MY-55761382/plain-boiled-rice-500x500.png"
+      "photo":"https://5.imimg.com/data5/AQ/SL/MY-55761382/plain-boiled-rice-500x500.png",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -146,7 +167,9 @@
       "description":"Children all time favorites KFC popcorn chicken with rice bowl",
       "price":280,
       "category_id":2,
-      "photo":"https://img-global.cpcdn.com/recipes/ee9764220a293219/751x532cq70/kfc-rice-bowl-recipe-main-photo.jpg"
+      "photo":"https://img-global.cpcdn.com/recipes/ee9764220a293219/751x532cq70/kfc-rice-bowl-recipe-main-photo.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -155,7 +178,9 @@
       "description":"perfect juicy grilled chicken, grilled corn off the cob, tomatoes, lettuce, avocado and onion make for a delicious summer salad! Simple oil and vinegar dressing is the perfect finishing touch.",
       "price":100,
       "category_id":3,
-      "photo":"https://www.crunchycreamysweet.com/wp-content/uploads/2018/06/easy-grilled-chicken-salad-1.jpg"
+      "photo":"https://www.crunchycreamysweet.com/wp-content/uploads/2018/06/easy-grilled-chicken-salad-1.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -164,7 +189,9 @@
       "description":"sweet potatoes have a mild, starchy, sweet flavor. When baked or boiled, the flesh becomes soft and slightly stringy (depending on the variety). When fried or roasted at high heat, the exterior becomes crisp and caramelized.",
       "price":120,
       "category_id":3,
-      "photo":"https://www.eatingbirdfood.com/wp-content/uploads/2020/06/sweet-potato-salad-spinach.jpg"
+      "photo":"https://www.eatingbirdfood.com/wp-content/uploads/2020/06/sweet-potato-salad-spinach.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -173,8 +200,9 @@
       "description":"This Antipasto Salad is loaded with Italian meats, cheeses, and veggies then drizzled with a light and zesty vinaigrette dressing!",
       "price":150,
       "category_id":3,
-      "photo":"https://therecipecritic.com/wp-content/uploads/2020/02/antipastosalad-500x500.jpg"
-
+      "photo":"https://therecipecritic.com/wp-content/uploads/2020/02/antipastosalad-500x500.jpg",
+      "numbers":0,
+      "inCart":"false"
     },
     {
       "id":16,
@@ -182,8 +210,9 @@
       "description":"This is one of my families favorite salads. Whether it is to bring to a bbq, a family gathering, or just enjoying together around the dinner table it is a winner! If you love bbq this is the perfect recipe to follow for a healthy afternoon or dinner meal. This recipe can also be super versatile and with all of the different flavors it is always delicious! Try out this dish after a night of bbq and use your extra pulled pork to put in a salad. Leftovers can always be used to make all kinds of meals and nobody would ever even know the difference.",
       "price":180,
       "category_id":3,
-      "photo":"https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2019/02/Pulled-Pork-Cabbage-Arugula-Salad-4.jpg"
-
+      "photo":"https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2019/02/Pulled-Pork-Cabbage-Arugula-Salad-4.jpg",
+      "numbers":0,
+      "inCart":"false"
     },
     {
       "id":17,
@@ -191,8 +220,9 @@
       "description":"Broccoli salad is a classic summer cookout dish, but the traditional recipe is loaded up with sugar, ample mayo, bacon, and cheese. My recipe is a fresher, healthier version – I nix the sugar, meat, and cheese altogether – and the result is a crisp, refreshing, tangy dish that’ll be the star of your cookouts all summer long!",
       "price":150,
       "category_id":3,
-      "photo":"https://cdn.loveandlemons.com/wp-content/uploads/2019/05/broccoli-salad-recipe1.jpg"
-
+      "photo":"https://cdn.loveandlemons.com/wp-content/uploads/2019/05/broccoli-salad-recipe1.jpg",
+      "numbers":0,
+      "inCart":"false"
     },
     {
       "id":18,
@@ -200,8 +230,9 @@
       "description":"In a large mixing bowl, combine all of your ingredients and toss gently to coat the lettuce in caesar dressing. This recipe makes enough croutons for two full salads so you’ll have them ready to go for round 2!",
       "price":150,
       "category_id":3,
-      "photo":"https://natashaskitchen.com/wp-content/uploads/2019/01/Caesar-Salad-Recipe-3.jpg"
-
+      "photo":"https://natashaskitchen.com/wp-content/uploads/2019/01/Caesar-Salad-Recipe-3.jpg",
+      "numbers":0,
+      "inCart":"false"
     },
     {
       "id":19,
@@ -209,8 +240,9 @@
       "description":"Based on the Brazilian dish churrasco, steak is flavoured with tangy Worcestershire sauce, spices, citrus and garlic",
       "price":200,
       "category_id":4,
-      "photo":"https://littlespicejar.com/wp-content/uploads/2020/06/Slow-Cooker-BBQ-Beef-Brisket-16-735x1102.jpg"
-
+      "photo":"https://littlespicejar.com/wp-content/uploads/2020/06/Slow-Cooker-BBQ-Beef-Brisket-16-735x1102.jpg",
+      "numbers":0,
+      "inCart":"false"
     },
     {
       "id":20,
@@ -218,7 +250,9 @@
       "description":"Sticky, tender beef ribs with a subtle oak-smoked flavour are sure to be a hit at your next barbecue",
       "price":250,
       "category_id":4,
-      "photo":"https://www.seriouseats.com/recipes/images/2016/08/20160802-barbecue-chuck-12.jpg"
+      "photo":"https://www.seriouseats.com/recipes/images/2016/08/20160802-barbecue-chuck-12.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -227,8 +261,9 @@
       "description":"About 20 minutes before grilling, remove the steaks from the refrigerator and let sit, covered, at room temperature.",
       "price":300,
       "category_id":4,
-      "photo":"https://images-gmi-pmc.edge-generalmills.com/b57ee35f-bce2-4229-8bf5-19b97876a4cb.jpg"
-
+      "photo":"https://images-gmi-pmc.edge-generalmills.com/b57ee35f-bce2-4229-8bf5-19b97876a4cb.jpg",
+      "numbers":0,
+      "inCart":"false"
     },
     {
       "id":22,
@@ -236,7 +271,9 @@
       "description":"This traditional chili couldn't be any easier. Simply brown lean Ground Beef, add in pantry-friendly ingredients and simmer for 20 minutes.",
       "price":250,
       "category_id":4,
-      "photo":"https://natashaskitchen.com/wp-content/uploads/2018/10/Beef-Chili-Recipe-4.jpg"
+      "photo":"https://natashaskitchen.com/wp-content/uploads/2018/10/Beef-Chili-Recipe-4.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -245,7 +282,9 @@
       "description":"This is a recipe that's easy and foolproof. No bells and whistles - just a few ingredients including beef, egg, bread crumbs and a simple tomato-based topping.",
       "price":230,
       "category_id":4,
-      "photo":"https://storage.googleapis.com/cdn.thelondoneconomic.com/wp-content/uploads/2021/02/2dbae44d-how-to-make_-classic-beef-meatloaf.jpg"
+      "photo":"https://storage.googleapis.com/cdn.thelondoneconomic.com/wp-content/uploads/2021/02/2dbae44d-how-to-make_-classic-beef-meatloaf.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -254,7 +293,9 @@
       "description":"Colorful bell peppers are stuffed with Ground Beef, tomatoes and rice. No one will ever know how easy this flavorful and hearty dish was to make.",
       "price":200,
       "category_id":4,
-      "photo":"https://hips.hearstapps.com/hmg-prod/images/delish-classic-stuffed-peppers-horizontal-1538065876.jpg"
+      "photo":"https://hips.hearstapps.com/hmg-prod/images/delish-classic-stuffed-peppers-horizontal-1538065876.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
      {
@@ -263,7 +304,9 @@
       "description":"Afritada is a Philippine dish consisting of chicken braised in tomato sauce with carrots, potatoes, and red and green bell peppers. It is served on white rice and is a common everyday Filipino meal. It can also be used to cook seafood",
       "price":150,
       "category_id":5,
-      "photo":"https://salu-salo.com/wp-content/uploads/2012/07/Chicken-Afritada-3.jpg"
+      "photo":"https://salu-salo.com/wp-content/uploads/2012/07/Chicken-Afritada-3.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -272,7 +315,9 @@
       "description":"Airline chicken is a food dish comprising a boneless chicken breast with the drumette attached. Skin on breast with 1st wing joint and tender attached, otherwise boneless.",
       "price":200,
       "category_id":5,
-      "photo":"https://chefofking.net/wp-content/uploads/2018/10/Airline-Chicken-Breast-1.jpg"
+      "photo":"https://chefofking.net/wp-content/uploads/2018/10/Airline-Chicken-Breast-1.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -281,7 +326,9 @@
       "description":"Barbecue chicken consists of chicken parts or entire chickens[1] that are barbecued, grilled or pitrito. There are many global and regional preparation techniques and cooking styles. Barbecue chicken is often seasoned or coated in a spice rub, barbecue sauce, or both.",
       "price":250,
       "category_id":5,
-      "photo":"https://www.foodiecrush.com/wp-content/uploads/2019/07/BBQ-Chicken-Breasts-foodiecrush.com-007.jpg"
+      "photo":"https://www.foodiecrush.com/wp-content/uploads/2019/07/BBQ-Chicken-Breasts-foodiecrush.com-007.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -290,7 +337,9 @@
       "description":"Bean sprouts chicken is a dish similar to Hainanese chicken rice, the only difference being the dish comes with a plate of beansprouts. The steamed chicken is served with light soya sauce flavoured with oil.",
       "price":180,
       "category_id":5,
-      "photo":"https://upload.wikimedia.org/wikipedia/commons/8/8f/BeanSproutsChicken.jpg"
+      "photo":"https://upload.wikimedia.org/wikipedia/commons/8/8f/BeanSproutsChicken.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -299,7 +348,9 @@
       "description":"Beer can chicken is a barbecued chicken dish and method of indirect grilling using a partially-filled can of beer that is placed in the chicken's cavity prior to cooking.",
       "price":320,
       "category_id":5,
-      "photo":"https://fitfoodiefinds.com/wp-content/uploads/2018/06/sq-3.jpg"
+      "photo":"https://fitfoodiefinds.com/wp-content/uploads/2018/06/sq-3.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -308,7 +359,9 @@
       "description":"Hunter's chicken is a chicken dish that is a part of French cuisine.The primary ingredients in hunter's chicken are sautéed chicken and a reduced chasseur sauce prepared using tomatoes, mushrooms, onions, white wine, brandy and tarragon.",
       "price":220,
       "category_id":5,
-      "photo":"https://somethingsweetsomethingsavoury.com/wp-content/uploads/2020/01/Slow-Cooker-Hunters-Chicken-1-of-1-3-480x480.jpg"
+      "photo":"https://somethingsweetsomethingsavoury.com/wp-content/uploads/2020/01/Slow-Cooker-Hunters-Chicken-1-of-1-3-480x480.jpg",
+      "numbers":0,
+      "inCart":"false"
     },
     {
       "id":31,
@@ -316,8 +369,9 @@
       "description":"A unique and tasty street style burger recipe made with paneer cubes with pav bhaji masala. its a combination of western cuisine to our own street style vada pav recipe, filled with spice and flavour. it can be ideally served for lunch and dinner with a side of favourite chips or any deep-fried snacks.",
       "price":220,
       "category_id":6,
-      "photo":"https://www.chefmeghnas.in/wp-content/uploads/2020/06/Webp.net-resizeimage-1.jpg"
-
+      "photo":"https://www.chefmeghnas.in/wp-content/uploads/2020/06/Webp.net-resizeimage-1.jpg",
+      "numbers":0,
+      "inCart":"false"
     },
     {
       "id":32,
@@ -325,8 +379,9 @@
       "description":"Prepare a baking tray with a parchment paper. Place the veggie patties on the baking tray. Drizzle some oil over them. ",
       "price":150,
       "category_id":6,
-      "photo":"https://artofpalate.com/wp-content/uploads/2014/10/aloo-tikki-burger-1.jpg"
-
+      "photo":"https://artofpalate.com/wp-content/uploads/2014/10/aloo-tikki-burger-1.jpg",
+      "numbers":0,
+      "inCart":"false"
     },
     {
       "id":33,
@@ -334,7 +389,9 @@
       "description":"The Luger burger is the stuff of legend—a plump patty shaped from the trimmings of the Brooklyn steak house's Prime-grade porterhouse steaks, which are dry aged in the restaurant's basement and cooked in the same broilers.",
       "price":280,
       "category_id":6,
-      "photo":"http://www.burgerweekly.com/wp-content/uploads/2012/12/IMG_0060pixel.jpg"
+      "photo":"http://www.burgerweekly.com/wp-content/uploads/2012/12/IMG_0060pixel.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -343,7 +400,9 @@
       "description":"The grilled Le Pigeon Burger has a nice, smoky flavor that is enhanced with each topping. Gabriel Rucker layers it with Tillamook white cheddar, lettuce slaw, and pickled onions along with some ketchup, mayo, and mustard. The ciabatta bun is also tremendous.",
       "price":220,
       "category_id":6,
-      "photo":"https://i.pinimg.com/originals/ce/7a/55/ce7a556e9eb39610c2330130ade41de7.jpg"
+      "photo":"https://i.pinimg.com/originals/ce/7a/55/ce7a556e9eb39610c2330130ade41de7.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -352,7 +411,9 @@
       "description":"Our Whopper Sandwich is a ¼ lb* of savory flame-grilled beef topped with juicy tomatoes, fresh lettuce, creamy mayonnaise, ketchup, crunchy pickles, and sliced white onions on a soft sesame seed bun.",
       "price":204,
       "category_id":6,
-      "photo":"https://i.pinimg.com/originals/ae/1f/62/ae1f6202f33fa42d606df6ab1be74945.jpg"
+      "photo":"https://i.pinimg.com/originals/ae/1f/62/ae1f6202f33fa42d606df6ab1be74945.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -361,7 +422,9 @@
       "description":"The Luger burger is the stuff of legend—a plump patty shaped from the trimmings of the Brooklyn steak house's Prime-grade porterhouse steaks, which are dry aged in the restaurant's basement and cooked in the same broilers.",
       "price":210,
       "category_id":6,
-      "photo":"https://peterluger.com/media/catalog/product/cache/1/small_image/9df78eab33525d08d6e5fb8d27136e95/b/u/burger.jpg"
+      "photo":"https://peterluger.com/media/catalog/product/cache/1/small_image/9df78eab33525d08d6e5fb8d27136e95/b/u/burger.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -370,7 +433,9 @@
       "description":"Orange juice is a liquid extract of the orange tree fruit, produced by squeezing or reaming oranges.",
       "price":70,
       "category_id":7,
-      "photo":"https://upload.wikimedia.org/wikipedia/commons/f/fd/Orange_juice_1.jpg"
+      "photo":"https://upload.wikimedia.org/wikipedia/commons/f/fd/Orange_juice_1.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -379,7 +444,9 @@
       "description":"Apple juice is produced by the crushing of apples, and then is filtered extraction of the clear juice.",
       "price":100,
       "category_id":7,
-      "photo":"https://images-gmi-pmc.edge-generalmills.com/1eb60545-cc16-4c22-a4fc-a184887e4e8d.jpg"
+      "photo":"https://images-gmi-pmc.edge-generalmills.com/1eb60545-cc16-4c22-a4fc-a184887e4e8d.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -388,8 +455,9 @@
       "description":"Mango Juice is made with no added sugar yet it is sufficiently sweet, fruity and so refreshing. It comes together in only a few minutes. Perfect for beating the heat during hot summer days!",
       "price":80,
       "category_id":7,
-      "photo":"https://www.pepperbowl.com/wp-content/uploads/2017/07/fresh-mango-juice.jpg"
-
+      "photo":"https://www.pepperbowl.com/wp-content/uploads/2017/07/fresh-mango-juice.jpg",
+      "numbers":0,
+      "inCart":"false"
     },
     {
       "id":40,
@@ -397,8 +465,9 @@
       "description":"Juice made with fresh pineapple at home. You can easily make refreshing pineapple juice at home without a juicer. It is one of the best nutrient rich fruit juice that is a true tropical delight.",
       "price":75,
       "category_id":7,
-      "photo":"https://www.whiskaffair.com/wp-content/uploads/2018/12/Pineapple-Juice-1-1.jpg"
-
+      "photo":"https://www.whiskaffair.com/wp-content/uploads/2018/12/Pineapple-Juice-1-1.jpg",
+      "numbers":0,
+      "inCart":"false"
     },
     {
       "id":41,
@@ -406,7 +475,9 @@
       "description":"Watermelon juice that's refreshing, naturally sweet and satisfying. It is a perfect beverage on a hot day, after a workout, or any time ",
       "price":50,
       "category_id":7,
-      "photo":"https://cdn.cdnparenting.com/articles/2020/03/27141555/Watermelon-Juice-Recipe.jpg"
+      "photo":"https://cdn.cdnparenting.com/articles/2020/03/27141555/Watermelon-Juice-Recipe.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -415,8 +486,9 @@
       "description":"The best ripe fruits has soft, melt in your mouth with granular texture. Chikoo is called sapota or sapodilla in English. Or spelled as chikku or chickoo. ",
       "price":110,
       "category_id":7,
-      "photo":"https://www.spiceupthecurry.com/wp-content/uploads/2016/05/chikoo-milkshake-recipe-4.jpg"
-
+      "photo":"https://www.spiceupthecurry.com/wp-content/uploads/2016/05/chikoo-milkshake-recipe-4.jpg",
+      "numbers":0,
+      "inCart":"false"
     },
     {
       "id":43,
@@ -424,7 +496,9 @@
       "description":"Under all the whipped cream are layers of soft chocolate sponge with a hint of rum and cinnamon. This classic cake never fails to impress.",
       "price":600,
       "category_id":8,
-      "photo":"https://i.ndtvimg.com/i/2015-11/black-forest_625x350_81447409128.jpg"
+      "photo":"https://i.ndtvimg.com/i/2015-11/black-forest_625x350_81447409128.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -433,7 +507,9 @@
       "description":"A moist golden cake soaked layered with whipped cream and topped with juiced pineapple slice. A quintessential birthday cake that you can easily prepare at home.",
       "price":800,
       "category_id":8,
-      "photo":"https://i.ndtvimg.com/i/2015-11/pineapple-cake_625x350_61447412471.jpg"
+      "photo":"https://i.ndtvimg.com/i/2015-11/pineapple-cake_625x350_61447412471.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -442,7 +518,9 @@
       "description":"The good old chocolate truffle, only this time it's eggless! A soft sponge layered with a creamy, dark chocolate ganache.",
       "price":1000,
       "category_id":8,
-      "photo":"https://i.ndtvimg.com/i/2015-11/eggless-cake_625x350_71447412611.jpg"
+      "photo":"https://i.ndtvimg.com/i/2015-11/eggless-cake_625x350_71447412611.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -451,7 +529,9 @@
       "description":"A delightful moist cake with an intense coffee flavor. Iced with a creamy coffee mocha frosting.",
       "price":700,
       "category_id":8,
-      "photo":"https://www.ndtv.com/cooks/images/coffee-cake_article.jpg"
+      "photo":"https://www.ndtv.com/cooks/images/coffee-cake_article.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -460,7 +540,9 @@
       "description":"This recipe is a feast for all the chocolate lovers. A decadent chocolate cake layered with a chocolate fudge frosting and topped with a thick chocolate ganache.",
       "price":700,
       "category_id":8,
-      "photo":"https://www.ndtv.com/cooks/images/fudgy-cake_article.jpg"
+      "photo":"https://www.ndtv.com/cooks/images/fudgy-cake_article.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     },
     {
@@ -469,7 +551,9 @@
       "description":"Mango flavored cake with meringue served with a thick layer of mango puree & mascarpone dressing between layers.",
       "price":850,
       "category_id":8,
-      "photo":"https://i.ndtvimg.com/i/2015-11/mango-meringue-cake_625x350_41447415336.jpg"
+      "photo":"https://i.ndtvimg.com/i/2015-11/mango-meringue-cake_625x350_41447415336.jpg",
+      "numbers":0,
+      "inCart":"false"
 
     }   
 

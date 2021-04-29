@@ -1,7 +1,13 @@
-import React, { Component } from 'react'
+import React,{useEffect} from 'react'
 import {Link, NavLink} from 'react-router-dom';
-export class Navbar extends Component {
-    render() {
+import { connect } from 'react-redux';
+import { getnumber } from './../store/Actions/orderAction';
+
+function Navbar(props) {   
+    useEffect(() => {
+        getnumber();
+    }, [])
+   
         return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -16,7 +22,10 @@ export class Navbar extends Component {
                                 <NavLink className="nav-link" exact to="/menu">Menu</NavLink>
                             </li>
                             <li className="nav-item pl-4">
-                                <NavLink className="nav-link" exact to="/order">Order</NavLink>
+                                
+                                <NavLink className="nav-link" exact to="/order">Order
+                                <span class="badge badge-light">{props.cartProps.cartnumbers}</span>
+                                </NavLink>
                             </li>
                         </ul>
                     </div>
@@ -24,7 +33,8 @@ export class Navbar extends Component {
             </nav>
         </div>
         )
-    }
 }
-
-export default Navbar
+const mapStateToProps = state => ({
+    cartProps:state.carts
+})
+export default connect(mapStateToProps,{getnumber}) (Navbar);
