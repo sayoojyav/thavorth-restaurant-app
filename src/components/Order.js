@@ -7,12 +7,14 @@ export const Container = styled.div`
   min-height: 100vh;  
   background: #150f0f;
   color: #fff;
+  
 `;
 export const Heading = styled.h1`
   font-size: clamp(2rem, 2.5vw, 3rem);
   text-align: center;
   margin-bottom: 3rem;
 `;
+
 const Order = ({cartProps,productQuantity}) =>  {
     console.log(cartProps);
     let ListCart = []
@@ -24,10 +26,14 @@ const Order = ({cartProps,productQuantity}) =>  {
         }
     })
     return (
+            <div>
+                <Container>
+                    <Heading>~Order~</Heading>
+                          
             <div className="row">
                 <div className="col-md-12">
-                    <table className="table">
-                        <thead>
+                    <table className="table text-white" >
+                        <thead >
                             <tr>
                                 <th></th>
                                 <th>Name</th>
@@ -63,6 +69,8 @@ const Order = ({cartProps,productQuantity}) =>  {
                         </tbody>
                     </table>
                 </div>
+            </div>
+             </Container> 
             </div>
 
         )
