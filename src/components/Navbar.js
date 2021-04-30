@@ -16,7 +16,7 @@ function Navbar(props) {
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className=" navbar-collapse" id="navbarSupportedContent">
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-lg-2">                           
                             <li className="nav-item pl-4">
                                 <NavLink className="nav-link" exact to="/menu">Menu</NavLink>

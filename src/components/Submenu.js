@@ -74,14 +74,12 @@ export const MenusButton = styled.button`
   }
 `;
 const Submenu = (props) =>  {
-      // const {id} =useParams();
+      const {id} =useParams();
       const {category_name} =useParams();      
       const dispatch = useDispatch()
       const menus = useSelector((state) =>state.menus)
-      // console.log(menus)      
-      const menu = menus.map((value)=>{return value;});
-      // console.log(menu)
-     
+      const menu = menus.filter((item) => item.category_id == id);
+      
       useEffect(() => {
        dispatch(viewMenulist())
        
@@ -92,18 +90,19 @@ const Submenu = (props) =>  {
           <MenuContainer>
             <MenusHeading>~{category_name}~</MenusHeading>
             <MenusWrapper>
-              {menu && menu.filter((m)=>{return m.category_id === 1}).map((filteredmenu,index) => (
-                      <MenusCard key={filteredmenu.id}>
-                <MenusImg src={filteredmenu.photo} alt="foodpic"></MenusImg>
-                <MenusInfo>
-                <h1 style={{color:'green'}}>{filteredmenu.name}</h1>
-                <MenusDesc>{filteredmenu.description}</MenusDesc>
-                <MenusPrice>${filteredmenu.price}</MenusPrice>                    
-                </MenusInfo>
-                <Menufooter><MenusButton onClick={()=>props.addcart(filteredmenu)}>Add to Cart</MenusButton></Menufooter>
-                
-              </MenusCard>
-                     ))}
+              {menu && menu.map((filteredmenu,index) =>{
+                return(
+                  <MenusCard key={index}>
+                    <MenusImg src={filteredmenu.photo} alt="foodpic"></MenusImg>
+                    <MenusInfo>
+                      <h1 style={{color:'green'}}>{filteredmenu.name}</h1>
+                      <MenusDesc>{filteredmenu.description}</MenusDesc>
+                      <MenusPrice>${filteredmenu.price}</MenusPrice>                    
+                    </MenusInfo>
+                    <Menufooter><MenusButton onClick={()=>props.addcart(filteredmenu)}>Add to Cart</MenusButton></Menufooter>                
+                  </MenusCard>
+                )
+              })}         
             </MenusWrapper>
           </MenuContainer>
         </div>

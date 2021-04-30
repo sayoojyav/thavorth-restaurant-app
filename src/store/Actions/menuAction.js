@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { VIEW_MENUS } from './types';
 
 export const viewMenulist = () =>{
     return (dispatch) => {
@@ -6,7 +7,7 @@ export const viewMenulist = () =>{
          .get('http://localhost:3001/menus')
          .then(menus =>{
              dispatch({
-                 type: "VIEW_MENUS",
+                 type: VIEW_MENUS,
                  menus
              })
          })

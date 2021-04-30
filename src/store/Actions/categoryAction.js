@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { GET_CATEGORY } from './types';
 
  export const getCategory = () => {
      return (dispatch) => {
@@ -6,7 +7,7 @@ import axios from 'axios';
          .get('http://localhost:3001/categories')
          .then(categories =>{
              dispatch({
-                 type: "GET_CATEGORY",
+                 type: GET_CATEGORY,
                  categories
              })
          })

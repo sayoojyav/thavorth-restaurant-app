@@ -1,4 +1,5 @@
 import { ADD_PRODUCT_CART,DECREASE_QUANTITY,GET_NUMBERS_CART, INCREASE_QUANTITY } from "../Actions/types";
+import { REMOVE_CART } from './../Actions/types';
 
 const initialState = {
     cartnumbers:0,
@@ -10,6 +11,10 @@ const initialState = {
 const orderReducer = (state =initialState,action) => {
     let foodSelected = "";
     switch (action.type) {
+        case GET_NUMBERS_CART:
+            return{
+                ...state
+            }
         case ADD_PRODUCT_CART:
           foodSelected ={
               id:action.payload.id,
@@ -31,11 +36,7 @@ const orderReducer = (state =initialState,action) => {
                     ...state.carts,
                     [action.payload.id]:foodSelected
                 }
-            }
-        case GET_NUMBERS_CART:
-            return{
-                ...state
-            }
+            }        
         case INCREASE_QUANTITY:
             state.carts[action.payload].numbers++;
             return{
@@ -62,6 +63,20 @@ const orderReducer = (state =initialState,action) => {
                     [action.payload.id]:foodSelected
                 }
             }
+        case REMOVE_CART:            
+            let numberBackup = state.carts[action.payload].numbers;
+            state.carts[action.payload].number =0;
+            state.carts[action.payload].inCart=false;
+            return{
+                ...state,
+                cartnumbers:state.cartnumbers - numberBackup,
+                cartcost:state.cartcost - (numberBackup* state.carts[action.payload].price),
+                carts:{
+                     ...state.carts,
+                    [action.payload.id]:foodSelected
+                }
+            }
+
         default:
             return state;
           
