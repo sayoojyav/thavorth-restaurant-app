@@ -40,6 +40,7 @@ const Order = ({cartProps,productQuantity,removeCart}) =>  {
                     </div>
                     )}                      
                     <br/>
+                    {ListCart.length!==0 &&(
                     <div className="row">
                         <div className="col-md-12">
                             <table className="table text-white" >
@@ -79,7 +80,13 @@ const Order = ({cartProps,productQuantity,removeCart}) =>  {
                                 </tbody>
                             </table>
                         </div>
-                    </div>                  
+                    </div>
+                    )}
+                    {ListCart.length === 0 &&(
+                        <div class="alert alert-info" style={{width: "20%",marginLeft:'500px'}} role="alert">
+                            <p style={{textAlign:'center',fontSize:20}}>Cart is empty</p>
+                        </div>
+                    )}                   
                 </Container> 
             </div>
 
