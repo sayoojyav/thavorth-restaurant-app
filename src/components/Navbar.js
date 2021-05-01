@@ -17,7 +17,7 @@ function Navbar(props) {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav mr-lg-2">                           
+                        <ul className="navbar-nav nav-flex-icons ml-auto">                           
                             <li className="nav-item pl-4">
                                 <NavLink className="nav-link" exact to="/menu">Menu</NavLink>
                             </li>
