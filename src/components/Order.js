@@ -31,7 +31,7 @@ const Order = ({cartProps,productQuantity,removeCart}) =>  {
             <div>
                 <Container>
                     <Heading>~Order~</Heading>
-                    {ListCart.length !==0 && (
+                    {/* {ListCart.length !==0 && (
                     <div class="alert alert-danger alert-dismissible fade show" role="alert">
                         <strong>Your order is placed and Status is pending .</strong>
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -39,7 +39,7 @@ const Order = ({cartProps,productQuantity,removeCart}) =>  {
                         </button>
                     </div>
                     )}                      
-                    <br/>
+                    <br/> */}
                     {ListCart.length!==0 &&(
                     <div className="row">
                         <div className="col-md-12">
