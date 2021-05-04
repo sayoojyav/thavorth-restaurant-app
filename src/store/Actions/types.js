@@ -5,3 +5,7 @@ export const DECREASE_QUANTITY = 'DECREASE_QUANTITY';
 export const REMOVE_CART = 'REMOVE_CART';
 export const VIEW_MENUS = 'VIEW_MENUS';
 export const GET_CATEGORY= 'GET_CATEGORY';
+export const CREATE_ORDER = 'CREATE_ORDER';
+export const CLEAR_ORDER = 'CLEAR_ORDER';
+export const CLEAR_CART = "CLEAR_CART";
+export const FETCH_ORDER = "FETCH_ORDER";
