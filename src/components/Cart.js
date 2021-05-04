@@ -208,7 +208,8 @@ const Cart = ({cartProps,productQuantity,removeCart,createOrder,clearOrder}) => 
                     )}
                     {ListCart.length === 0 &&(
                         <div class="alert alert-info" style={{width: "20%",marginLeft:'500px'}} role="alert">
-                            <p style={{textAlign:'center',fontSize:20}}>Cart is empty</p>
+                            <p style={{textAlign:'center',fontSize:20}}>Your Cart is empty!</p>
+                            <p style={{textAlign:'center'}}>Add items to it now.</p>
                         </div>
                     )}                   
                 </Container> 
