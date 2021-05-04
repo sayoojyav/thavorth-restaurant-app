@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Menu from './components/Menu';
 import Submenu from './components/Submenu';
-import Order from './components/Order';
+import Cart from './components/Cart';
 function App() {
   return (
     <Router>
@@ -16,7 +16,7 @@ function App() {
         <Route exact path="/" component={Home}/>
         <Route exact path="/menu" component={Menu} />
         <Route exact path="/submenu/:id/:category_name" component={Submenu}/>
-        <Route exact path="/order" component={Order} />
+        <Route exact path="/cart" component={Cart} />
       </Switch>
     </Router>
     

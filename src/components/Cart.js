@@ -1,11 +1,11 @@
 import React, { useState} from 'react'
 import styled from 'styled-components';
 import { connect } from 'react-redux';
-import { productQuantity, removeCart } from './../store/Actions/orderAction';
+import { productQuantity, removeCart } from '../store/Actions/orderAction';
 import Fade from "react-reveal/Fade";
 import Modal from "react-modal";
 import Zoom from "react-reveal/Zoom";
-import { createOrder,clearOrder } from './../store/Actions/cartAction';
+import { createOrder,clearOrder } from '../store/Actions/cartAction';
 export const Container = styled.div`
   /* width: 100vw; */
   min-height: 100vh;  
@@ -54,7 +54,7 @@ export const Orderlist = styled.li`
     align-items: center;
 `;
 
-const Order = ({cartProps,productQuantity,removeCart,createOrder,clearOrder}) =>  {
+const Cart = ({cartProps,productQuantity,removeCart,createOrder,clearOrder}) =>  {
     console.log(cartProps);
     let ListCart = []
     let Totalcart =cartProps.cartcost;
@@ -93,16 +93,7 @@ const Order = ({cartProps,productQuantity,removeCart,createOrder,clearOrder}) =>
                  
             <div>
                 <Container>
-                    <Heading>~Order~</Heading>
-                    {/* {ListCart.length !==0 && (
-                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                        <strong>Your order is placed and Status is pending .</strong>
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    )}                      
-                    <br/> */}
+                    <Heading>~My Cart~</Heading>                   
                     {order && (
                         <Modal isOpen={modalIsOpen} onRequestClose={closeModal} >
                             <Zoom>
@@ -232,4 +223,4 @@ const mapStateToProps = state => ({
     order:state.orders,
     cartProps :state.carts
 });
-export default connect(mapStateToProps,{productQuantity,removeCart,createOrder,clearOrder}) (Order);
+export default connect(mapStateToProps,{productQuantity,removeCart,createOrder,clearOrder}) (Cart);

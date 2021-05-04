@@ -23,7 +23,7 @@ function Navbar(props) {
                             </li>
                             <li className="nav-item pl-4">
                                 
-                                <NavLink className="nav-link" exact to="/order">
+                                <NavLink className="nav-link" exact to="/cart">
                                 <span><i class="fas fa-shopping-cart"></i></span>
                                 <span class="badge badge-pill bg-danger">{props.cartProps.cartnumbers}</span>
                                 </NavLink>
