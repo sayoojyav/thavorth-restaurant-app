@@ -6,6 +6,8 @@ import Home from './components/Home';
 import Menu from './components/Menu';
 import Submenu from './components/Submenu';
 import Cart from './components/Cart';
+import NotFound from './components/NotFound';
+import Order from './components/Order';
 function App() {
   return (
     <Router>
@@ -17,6 +19,8 @@ function App() {
         <Route exact path="/menu" component={Menu} />
         <Route exact path="/submenu/:id/:category_name" component={Submenu}/>
         <Route exact path="/cart" component={Cart} />
+        <Route exact path="/order" component={Order}/>
+        <Route component={NotFound}/>
       </Switch>
     </Router>
     

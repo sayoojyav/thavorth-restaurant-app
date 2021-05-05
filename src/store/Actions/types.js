@@ -9,3 +9,6 @@ export const CREATE_ORDER = 'CREATE_ORDER';
 export const CLEAR_ORDER = 'CLEAR_ORDER';
 export const CLEAR_CART = "CLEAR_CART";
 export const FETCH_ORDER = "FETCH_ORDER";
+export const SEARCH_ORDER = "SEARCH_ORDER";
+export const LOADING = "LOADING";
+export const FETCH_SEARCHORDER ="FETCH_SEARCHORDER";

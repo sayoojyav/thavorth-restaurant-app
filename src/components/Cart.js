@@ -68,21 +68,22 @@ const Cart = ({cartProps,productQuantity,removeCart,createOrder,clearOrder}) => 
     const [open, setOpen] = useState(false);    
     const [modalIsOpen,setIsOpen] = useState(false);
     const [order,setOrder] = useState({
+        id:'',        
         tablenumber:'',
         customername:'',
         status:'pending',
         CartItems:ListCart       
         
     })
-    const { tablenumber,customername} = order;
+    const { id,tablenumber,customername} = order;
     const onInputChange = e => {
     setOrder({ ...order, [e.target.name]: e.target.value });
   };
   
     const onSubmit = async e => {
     e.preventDefault();
-    createOrder(order);   
-   setIsOpen(true);
+    createOrder(order);    
+    setIsOpen(true);
     };
    
     const closeModal = () =>{
@@ -94,7 +95,7 @@ const Cart = ({cartProps,productQuantity,removeCart,createOrder,clearOrder}) => 
             <div>
                 <Container>
                     <Heading>~My Cart~</Heading>                   
-                    {order && (
+                    {order &&  (
                         <Modal isOpen={modalIsOpen} onRequestClose={closeModal} >
                             <Zoom>
                                 <button className="close-modal" onClick={closeModal}>x</button>
@@ -110,6 +111,10 @@ const Cart = ({cartProps,productQuantity,removeCart,createOrder,clearOrder}) => 
                     </div>
                         <h2>Order{order.id}</h2>
                         <ul>
+                             <Orderlist>
+                                <div style= {{padding:'10px'}}>OrderId:</div>
+                                <div>{order.id}</div>                                
+                            </Orderlist>
                             <Orderlist>
                                 <div style= {{padding:'10px'}}>TableNumber:</div>
                                 <div>{order.tablenumber}</div>                                
@@ -124,7 +129,7 @@ const Cart = ({cartProps,productQuantity,removeCart,createOrder,clearOrder}) => 
                                     <div>
                                         {x.count} {x.name}-{x.numbers}
                                     </div>
-                                ))}</div>
+                                ))}</div>                                
                             </Orderlist>
                             <Orderlist>
                                 <div style= {{padding:'10px'}}>Total:</div>
@@ -189,6 +194,10 @@ const Cart = ({cartProps,productQuantity,removeCart,createOrder,clearOrder}) => 
                             <Fade in={open}>                               
                                    <div className="card col-14 col-lg-4 mx-auto mt-5 bg-primary">
                                        <form onSubmit={e => onSubmit(e)}>
+                                           <div className="form-group text-left">
+                                                <label htmlFor="exampleInputNumber">OrderId:</label>
+                                                <input type="text" className="form-control" placeholder="Enter Number" name="id" value={id} onChange={e => onInputChange(e)}  />
+                                            </div>
                                            <div className="form-group text-left">
                                                 <label htmlFor="exampleInputNumber">TableNumber:</label>
                                                 <input type="text" className="form-control" placeholder="Enter Number" name="tablenumber" name="tablenumber" value={tablenumber} onChange={e => onInputChange(e)}  />
