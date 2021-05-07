@@ -9,8 +9,7 @@ import { createOrder,clearOrder } from '../store/Actions/cartAction';
 export const Container = styled.div`
   /* width: 100vw; */
   min-height: 100vh;  
-  background: #150f0f;
-  color: #fff;
+  color: #000;
   
 `;
 export const Heading = styled.h1`
@@ -150,7 +149,7 @@ const Cart = ({cartProps,productQuantity,removeCart,createOrder,clearOrder}) => 
                     {ListCart.length!==0 &&(
                     <div className="row">
                         <div className="col-md-12">
-                            <table className="table text-white" >
+                            <table className="table text-dark" >
                                 <thead >
                                     <tr>
                                         <th></th>

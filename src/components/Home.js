@@ -53,10 +53,10 @@ export const FrontBtn = styled.button`
   color: #fff;
   transition: 0.2s ease-out;
   &:hover {
-    background: #ffc500;
+    background: #0CA04E;
     transition: 0.2s ease-out;
     cursor: pointer;
-    color: #000;
+    color: #fff;
   }
 `;
 export class Home extends Component {

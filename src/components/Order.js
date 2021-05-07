@@ -6,9 +6,8 @@ import Fade from "react-reveal/Fade";
 export const Container = styled.div`
   /* width: 100vw; */
   min-height: 100vh;
-  padding: 5rem calc((100vw - 1300px) / 2);
-  background: #150f0f;
-  color: #fff;
+  padding: 5rem calc((100vw - 1300px) / 2);  
+  color: #000;
 `;
 export const Heading = styled.h1`
   font-size: clamp(2rem, 2.5vw, 3rem);
@@ -31,7 +30,6 @@ const Order = (props) => {
         e.preventDefault();
         props.fetchsearchOrder(props.text);
         props.setLoading();        
-        console.log("submitted data:",props.orders);
         setOpen(true);
     }
     
@@ -42,7 +40,7 @@ const Order = (props) => {
                    <Wrapper>
                        <div className="jumbotron-fluid mt-3 text-center">
                            <div className="container">
-                               <h1 className="display-4 mb-3 text-white">
+                               <h1 className="display-4 mb-3 text-dark">
                                    <i className="fa fa-search" /> Search for a order 
                                 </h1>
                                 <form id="searchForm" onSubmit={onSubmit}>

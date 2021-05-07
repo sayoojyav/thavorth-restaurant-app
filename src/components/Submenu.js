@@ -4,35 +4,38 @@ import styled from 'styled-components';
 import {connect, useDispatch,useSelector} from 'react-redux';
 import { viewMenulist } from './../store/Actions/menuAction';
 import { addcart } from './../store/Actions/orderAction';
-
-export const MenuContainer = styled.div`
+export const Container = styled.div`
   /* width: 100vw; */
   min-height: 100vh;
-  padding: 5rem calc((100vw - 1300px) / 2);
-  background: #150f0f;
-  color: #fff;
+  padding: 5rem calc((100vw - 1300px) / 2);  
+  color: #000;
 `;
-export const MenusHeading = styled.h1`
+export const Heading = styled.h1`
   font-size: clamp(2rem, 2.5vw, 3rem);
   text-align: center;
   margin-bottom: 3rem;
 `;
-export const MenusWrapper = styled.div`
+export const Wrapper = styled.div`
   display: flex; 
   flex-wrap: wrap;
+  float: left;
   justify-content: center;
  `;
-
-export const MenusCard = styled.div`
-  margin:0 2em;    
-  width: 300px;
-  background:#fff;
+export const Info = styled.div`
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
   text-align: center;
-  font-family: arial;
-  margin-bottom:4rem; 
 `;
-
-export const MenusImg = styled.img`
+export const Card = styled.div`
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;  
+  text-align: center;
+  font-family: arial;  
+`;
+export const Img = styled.img`
   height: 300px;
   min-width: 300px;
   max-width: 100%;
@@ -40,24 +43,12 @@ export const MenusImg = styled.img`
   position:'center';
 
 `;
-export const MenusInfo = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  text-align: center;
-`;
-export const MenusPrice = styled.p`
- color: grey;
-  font-size: 22px;
-`;
-export const MenusDesc = styled.p`
+export const Desc = styled.p`
   color:#000;
   `;
-export const Menufooter = styled.div`
-margin:auto;              
-        
+export const Price = styled.p`
+ color: grey;
+  font-size: 22px;
 `;
 export const MenusButton = styled.button`
   border: none;
@@ -68,49 +59,46 @@ export const MenusButton = styled.button`
   text-align: center;
   cursor: pointer;
   width: 100%;
-  font-size: 18px;
+  font-size: 18px;  
   &:hover {
     opacity: 0.7;
   }
 `;
-const Submenu = (props) =>  {
-      const {id} =useParams();
-      const {category_name} =useParams();      
-      const dispatch = useDispatch()
-      const menus = useSelector((state) =>state.menus)
-      const menu = menus.filter((item) => item.category_id == id);
-      
-      useEffect(() => {
-       dispatch(viewMenulist())
-       
-      },[dispatch])
-   
-        return (
-        <div>
-          <MenuContainer>
-            <MenusHeading>~{category_name}~</MenusHeading>
-            <MenusWrapper>
-              {menu && menu.map((filteredmenu,index) =>{
-                return(
-                  <MenusCard key={index}>
-                    <MenusImg src={filteredmenu.photo} alt="foodpic"></MenusImg>
-                    <MenusInfo>
-                      <h1 style={{color:'green'}}>{filteredmenu.name}</h1>
-                      <MenusDesc>{filteredmenu.description}</MenusDesc>
-                      <MenusPrice>${filteredmenu.price}</MenusPrice>                    
-                    </MenusInfo>
-                    <Menufooter><MenusButton onClick={()=>props.addcart(filteredmenu)}>Add to Cart</MenusButton></Menufooter>                
-                  </MenusCard>
-                )
-              })}         
-            </MenusWrapper>
-          </MenuContainer>
-        </div>
-                
-              
-              
-        )
-    
-}
+const Submenu = (props) => {
+  const {id} =useParams();
+  const {category_name} =useParams();
+  const dispatch = useDispatch()
+  const menus = useSelector((state) =>state.menus)
+  const menu = menus.filter((item) => item.category_id == id);
+  useEffect(() => {
+    dispatch(viewMenulist())
+  },[dispatch])
+  return (
+    <div>
+      <Container>
+        <Heading>~{category_name}~</Heading>
+        {menu && menu.map((filteredmenu,index) =>{
+          return(
+            <Wrapper>
+              <Info>
+                <Card key={index}>
+                  <Img src={filteredmenu.photo} alt="foodpic"/>
+                <h2>{filteredmenu.name}</h2>
+                <Desc>{filteredmenu.description}</Desc>
+                <Price>Rs.{filteredmenu.price}</Price>
+                <MenusButton onClick={()=>props.addcart(filteredmenu)}>Add to Cart</MenusButton>
+              </Card>
+            </Info>
 
+            </Wrapper>
+            
+
+
+          )        
+        })}
+      </Container>
+      
+    </div>
+  )
+}
 export default connect(null,{addcart})(Submenu);

@@ -10,14 +10,14 @@ function Navbar(props) {
    
         return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav className="navbar navbar-expand-lg navbar-dark"style={{backgroundColor: '#105A30'}} >
                 <div className="container">
-                    <Link className="navbar-brand  text-100" to="/">Fooddies</Link>
+                    <Link className="navbar-brand" to="/" style={{fontSize:'25px'}}>Fooddies</Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav nav-flex-icons ml-auto">                           
+                        <ul className="navbar-nav nav-flex-icons ml-auto" style={{fontSize:'17px'}}>                           
                             <li className="nav-item pl-4">
                                 <NavLink className="nav-link" exact to="/menu">Menu</NavLink>
                             </li>

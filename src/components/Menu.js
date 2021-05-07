@@ -6,9 +6,8 @@ import { getCategory } from './../store/Actions/categoryAction';
 export const MenuContainer = styled.div`
   /* width: 100vw; */
   min-height: 100vh;
-  padding: 5rem calc((100vw - 1300px) / 2);
-  background: #150f0f;
-  color: #fff;
+  padding: 5rem calc((100vw - 1300px) / 2); 
+  color: #000;
 `;
 export const MenusHeading = styled.h1`
   font-size: clamp(2rem, 2.5vw, 3rem);
@@ -32,7 +31,6 @@ export const MenusImg = styled.img`
   height: 300px;
   min-width: 300px;
   max-width: 100%;
-  box-shadow: 8px 8px #fdc500;
 `;
 export const MenusInfo = styled.div`
   display: flex;
@@ -46,14 +44,14 @@ export const MenusButton = styled.button`
   font-size: 1rem;
   padding: 1rem 4rem;
   border: none;
-  background: #e31837;
+  background: #000;
   color: #fff;
   transition: 0.2 ease-out;
   &:hover {
-    background: #ffc500;
+    background: #0CA04E;
     transition: 0.2s ease-out;
     cursor: pointer;
-    color: #000;
+    color: #fff;
   }
 `;
 
