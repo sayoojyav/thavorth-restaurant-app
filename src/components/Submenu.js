@@ -22,15 +22,17 @@ export const Wrapper = styled.div`
   justify-content: center;
  `;
 export const Info = styled.div`
-  display: flex;  
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
+  display: flex;
+  width: 100%;
+  height:100%;
+  padding:2rem;
+  margin-bottom: 25px;
   text-align: center;
 `;
 export const Card = styled.div`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
+  height:100%;
   margin: auto;  
   text-align: center;
   font-family: arial;  
@@ -43,11 +45,22 @@ export const Img = styled.img`
   position:'center';
 
 `;
+export const CardHeading = styled.h2`
+  width:100%;
+  height:50px;
+  font-size: 1.875em;
+`;
 export const Desc = styled.p`
+  margin-top:20px;
+  height: 50px;
+  width: 100%;
   color:#000;
   `;
 export const Price = styled.p`
- color: grey;
+  margin-top:120px;
+  height: 50px;
+  width: 100%;
+  color: grey;
   font-size: 22px;
 `;
 export const MenusButton = styled.button`
@@ -58,7 +71,7 @@ export const MenusButton = styled.button`
   background-color: #000;
   text-align: center;
   cursor: pointer;
-  width: 100%;
+  width: 100%;  
   font-size: 18px;  
   &:hover {
     opacity: 0.7;
@@ -83,17 +96,13 @@ const Submenu = (props) => {
               <Info>
                 <Card key={index}>
                   <Img src={filteredmenu.photo} alt="foodpic"/>
-                <h2>{filteredmenu.name}</h2>
-                <Desc>{filteredmenu.description}</Desc>
-                <Price>Rs.{filteredmenu.price}</Price>
-                <MenusButton onClick={()=>props.addcart(filteredmenu)}>Add to Cart</MenusButton>
-              </Card>
-            </Info>
-
-            </Wrapper>
-            
-
-
+                  <CardHeading>{filteredmenu.name}</CardHeading>                  
+                  <Desc>{filteredmenu.description}</Desc>
+                  <Price>Rs.{filteredmenu.price}</Price>
+                  <MenusButton onClick={()=>props.addcart(filteredmenu)}>Add to Cart</MenusButton>
+                </Card>
+              </Info>
+            </Wrapper> 
           )        
         })}
       </Container>
